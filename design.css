@@ -1,19 +1,10 @@
 *{
     font-family: Arial;
 }
-
-h1 {
-    font-size: large;
+body {
+    background-color: rgba(209, 224, 230, 0.75);
 }
-.btn {
-   color: white; 
+.menu {
+    background-color: #0000FF55;
+    font-size: 40px;
 }
-.btn-1 {
-    background-color: brown;
-}
-.btn-2 {
-    background-color: cyan;
-}
-.btn-2 {
-    background-color: green;
-} 
