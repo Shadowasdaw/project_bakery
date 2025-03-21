@@ -8,13 +8,32 @@
 </head>
 <body>
     <header>
-        <a href="" class="menu">Home</span>
-        <span class="menu">Produkte</span>
-        <span class="menu">Rezepte</span>
-        <span class="menu">Profil</span>
+            <a href="index.html" class="menu" id="">Home</a>
+            <a href="Produkte.html" class="menu" id="">Produkte</a>
+            <a href="Rezepteseite.html" class="menu" id="">Rezepte</a>
+            <a href="Profil.html" class="menu" id="">Profil</a>
     </header>
-
+    <button onclick="present()">click</button>
+    <div id="container"><div id="animation"></div></div>
     <script>
+        function present(){
+            let id = null;
+            const elem = document.getElementById('animation').innerHTML;
+            let pos = 0;
+            clearInterval(id);
+            id = setInterval(frame, 10);
+            function frame(){
+                if(pos === 350){
+                    clearInterval(id);
+                }
+                else{
+                    pos++;
+                    elem.style.top = pos + 'px';
+                    elem.style.top = pos + 'px';
+                }
+            }
+        }
+        
 
     </script>
 </body>

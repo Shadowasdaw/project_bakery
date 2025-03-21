@@ -5,6 +5,25 @@ body {
     background-color: rgba(209, 224, 230, 0.75);
 }
 .menu {
-    background-color: #0000FF55;
     font-size: 40px;
+    color: black;
+
 }
+.menu:hover {
+    color: yellow
+}
+.menu:active {
+    color: purple
+}
+#animation{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: red;
+}
+#container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: yellow;
+  }
