@@ -2,17 +2,20 @@
     font-family: Arial;
 }
 body {
-    background-color: rgb(220, 140, 80);
+    background-color: lightgray;
 }
-a:link {
-    background-color: rgb(200, 120, 60);
-    color: black;
+a {
+    color:black;
+    background-color: gray;
     font-size: 100px;
     text-align: center;
     text-decoration: none;
     padding: 10px, 20px;
 }
 a:hover {
+    color: red;
+}
+a:active {
     color: white;
 }
 nav {
