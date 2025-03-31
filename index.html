@@ -4,42 +4,21 @@
     <link rel="stylesheet" href="design.css"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="3">
     <title>Homepage</title>
 </head>
 <body>
     <header>
-        <span id="animation">
-            <a href="index.html" class="menu" id="">Home</a>
-            <a href="Produkte.html" class="menu" id="">Produkte</a>
-            <a href="Rezepteseite.html" class="menu" id="">Rezepte</a>
-            <a href="Profil.html" class="menu" id="">Profil</a>
-        </span>
-            
+        <nav>
+            <a href="index.html"><img src="bread.jpg" style="float: left; height: 117px;"></a>
+            <a href="index.html"> Home </a>
+            <a href="Produkte.html"> Produkte </a>
+            <a href="Rezepteseite.html"> Rezepte </a>
+            <a href="Profil.html"> Profil </a>
+        </nav>
     </header>
     <script>
-        function present(){
-            let id = null;
-            const elem = document.getElementById('animation');
-            let pos = 1;
-            clearInterval(id);
-            id = setInterval(frame, 100);
-            function frame(){
-                if(pos >= 1000){
-                    pos = 0;
-                    elem.style.top = pos + 'px';  
-                    if(pos <= 10){
-                        elem.style.top = 10;
-                        clearInterval(id);
-                    }     
-                }
-                else{
-                    pos = pos + pos;
-                    elem.style.fontSize = pos;
-                    console.log(elem.style.fontSize)
-                }
-            }
-        }
-        present()
+
     </script>
 </body>
 </html>

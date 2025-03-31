@@ -2,22 +2,19 @@
     font-family: Arial;
 }
 body {
-    background-color: white;
+    background-color: rgb(220, 140, 80);
 }
-.menu {
-    font-size: 100px;
+a:link {
+    background-color: rgb(200, 120, 60);
     color: black;
-
+    font-size: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px, 20px;
 }
-.menu:hover {
-    color: yellow
+a:hover {
+    color: white;
 }
-.menu:active {
-    color: purple
-}
-#animation {
-    width: 400px;
-  height: 200px;
-  position: relative;
-  background: white;
+nav {
+    text-align: right;
 }
