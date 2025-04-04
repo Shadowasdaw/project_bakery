@@ -12,12 +12,22 @@ header a {
     text-decoration: none;
     padding: 10px, 20px;
 }
-a:hover {
+.menu{
+    position:sticky;
+    top: 0px;
+}
+.menu:hover {
     color: red;
 }
-a:active {
+.menu:active {
     color: white;
 }
 header {
     text-align: right;
+}
+.picture-links {
+    flex-direction:row;
+    align-items: stretch;
+    display:flex;
+    justify-content: center;
 }
