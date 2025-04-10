@@ -1,25 +1,27 @@
+@media screen {
+    
+}
+
 *{
     font-family: 'Times New Roman', Times, serif;
 }
 body {
     background-color: lightgray;
 }
-header {
-    text-align: right;
-}
 a{
     text-decoration: none;
 }
  .menu a {
-    position: relative;
+    position:relative;
     color:black;
     font-size: 70px;
     text-align: center;
     text-decoration: none;
     border: 4px dotted black;
-    margin-left: 10px;
+    top: 0;
+    margin-left: 10px; 
 }
-.menu a::before{
+.menu a:before{
     content: '';
     position: absolute;
     top: -1.5px;
@@ -30,19 +32,25 @@ a{
 }
 .floater{
     float: left;
-    height: 100px;
+    height: 11.5%;
+    position: fixed;
+    top:1%;
+    left: 0.5%;
 }
 .menu{
     background-color: gray;
     border: 10px solid gray;
-}
-
-.menu a:active {
-    color: white;
+    text-align: right;
+    width: 100%;
+    height: 100%;
 }
 .menu a:hover {
     color: red;
 }
+.menu a:active {
+    color: white;
+}
+
 .picture-menu{
     width: auto;
     height: auto;
@@ -52,45 +60,66 @@ a{
     background-color: white;
 
 }
-.box1{
+.produkte-box{
     display: block;
-    background-image: url("bread.jpg");
-    width: 300px;
-    height: 300px;
-    background-size: 300px;
+    position:absolute;
+    background-image: url("baguette.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    width: 30%;
+    height: 87%;
+    top:11%;
+    left:0;
+    
     margin: 10px;
     color: aliceblue;
 }
-.box2{
+.home-box{
     display: block;
+    position:absolute;
     background-image: url("variants.jpg");
-    width: 300px;
-    height: 300px;
-    background-size: 300px;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+    height: 43%;
+    top: 11%;
+    left: 40%;
+    
     margin: 10px;
 }
-.box3{
+.deserts-box{
     display: block;
+    position:absolute;
     background-image: url("deserts.jpg");
-    width: 300px;
-    height: 300px;
-    background-size: 300px;
+    background-size:cover;
     background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+    height: 43%;
+    top: 55%;
+    left: 40%;
+    
     margin: 10px;
 }
-.box4{
+.cafe-box{
     display: block;
+    position:absolute;
     background-image: url("cafe.jpg");
-    width: 300px;
-    height: 300px;
-    background-size: 300px;
+    background-size: cover;
     background-repeat: no-repeat;
-    margin: 10px;
+    background-position: center;
+    width: 30%;
+    height:87%;
+    top:11%;
+    right: 0;
     color: white;
 }
 .sidebar{
     width: 20%;
     height: 20%;
+}
+.sidebar a{
+    margin: 1%;
 }
