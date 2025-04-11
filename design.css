@@ -7,12 +7,17 @@ body {
 a{
     text-decoration: none;
 }
+.title{
+    position: absolute;
+    left: 10%;
+    font-size: 70px;
+    border: 2px dashed black;
+}
  .menu a {
     position:relative;
     color:black;
     font-size: 70px;
     text-align: center;
-    text-decoration: none;
     border: 4px dotted black;
     top: 0;
     right: 10px;
@@ -42,10 +47,10 @@ a{
     height: 100%;
 }
 .menu a:hover {
-    color: red;
+    color: maroon;
 }
 .menu a:active {
-    color: white;
+    color: brown;
 }
 .produkte-box{
     display: block;
@@ -83,6 +88,7 @@ a{
     height: 43%;
     top: 55%;
     left: 40%;
+    color: black;
 }
 .cafe-box{
     display: block;
@@ -100,6 +106,11 @@ a{
 .sidebar a{
     margin: 1%;
     animation: 1s linear running pictureAnimations;
+    font-size: 500%;
+    outline: auto;
+}
+.sidebar a:hover{
+    opacity: 0.8;
 }
 #menuAnimations{
     animation: 0.8s linear running menuAnimations;
