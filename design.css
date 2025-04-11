@@ -52,7 +52,7 @@ a{
 .menu a:active {
     color: brown;
 }
-.produkte-box{
+.product-box{
     display: block;
     position:absolute;
     background-image: url("pictures/baguette.jpg");
@@ -112,6 +112,41 @@ a{
 .sidebar a:hover{
     opacity: 0.8;
 }
+
+.productMain-box{
+    position: absolute;
+    background-image: url(pictures/zopf.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+    top: 45%;
+    left: 45%;
+}
+.cafeMain-box{
+    position: absolute;
+    background-image: url(pictures/cafeMainBild.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+    top: 45%;
+    left: 45%;
+}
+.desertMain-box{
+    position: absolute;
+    background-image: url(pictures/deserts.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+    top: 45%;
+    left: 45%;
+}
+.main-titles{
+    position: absolute;
+    top: 37%;
+    left: 48.5%;
+    font-size: 70px;
+}
+
 #menuAnimations{
     animation: 0.8s linear running menuAnimations;
 }
