@@ -10,8 +10,8 @@
     <header>
         <a href="index.html"><img src="pictures/stone_oven.jpg" class="floater"></a>
         <nav class="menu">
-            
-            <a href="index.html">Home</a>
+            <span class="title" onmouseover="hello()">Der Beck</span>
+            <a href="index.html" id="demo">Home</a>
             <a href="Produkte.html">Produkte</a>
             <a href="cafe.html">Café</a>
             <a href="Deserts.html">Deserts</a>
@@ -20,7 +20,17 @@
     <div class="main-titles">Desert</div>
     <div class="desertMain-box"></div>
     <script>
-        
+        let check = true
+        function hello(){
+            if(check === true){
+                document.getElementById("demo").innerHTML = "Hello"
+            }
+            else{
+                document.getElementById("demo").innerHTML = "Home"
+            }
+            check = !check
+            
+        }
     </script>
 </body>
 </html>
