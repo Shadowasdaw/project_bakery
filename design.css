@@ -1,7 +1,3 @@
-@media screen {
-    
-}
-
 *{
     font-family: 'Times New Roman', Times, serif;
 }
@@ -19,7 +15,8 @@ a{
     text-decoration: none;
     border: 4px dotted black;
     top: 0;
-    margin-left: 10px; 
+    right: 10px;
+    margin: 10px; 
 }
 .menu a:before{
     content: '';
@@ -32,33 +29,25 @@ a{
 }
 .floater{
     float: left;
-    height: 11.5%;
+    height: 10%;
     position: fixed;
     top:1%;
     left: 0.5%;
+    animation: 1s linear running menuAnimations;
 }
 .menu{
     background-color: gray;
     border: 10px solid gray;
     text-align: right;
-    width: 100%;
+    width: 99%;
     height: 100%;
+    animation: 1s linear running menuAnimations;
 }
 .menu a:hover {
     color: red;
 }
 .menu a:active {
     color: white;
-}
-
-.picture-menu{
-    width: auto;
-    height: auto;
-    margin: 10px;
-    padding:10px;
-    border: 1px solid black;
-    background-color: white;
-
 }
 .produkte-box{
     display: block;
@@ -116,10 +105,16 @@ a{
     right: 0;
     color: white;
 }
-.sidebar{
-    width: 20%;
-    height: 20%;
-}
 .sidebar a{
     margin: 1%;
+    animation: 1s linear running pictureAnimations;
+}
+
+@keyframes pictureAnimations{
+    from{margin-top:50%;}
+    to{margin-top:0%;}
+}
+@keyframes menuAnimations{
+    from{margin-top:-10%;}
+    to{margin-top:0%;}
 }
