@@ -16,7 +16,7 @@ a{
     border: 4px dotted black;
     top: 0;
     right: 10px;
-    margin: 10px; 
+    margin: 1%; 
 }
 .menu a:before{
     content: '';
@@ -50,7 +50,7 @@ a{
 .produkte-box{
     display: block;
     position:absolute;
-    background-image: url("baguette.jpg");
+    background-image: url("pictures/baguette.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -58,14 +58,12 @@ a{
     height: 87%;
     top:11%;
     left:0;
-    
-    margin: 10px;
     color: aliceblue;
 }
 .home-box{
     display: block;
     position:absolute;
-    background-image: url("variants.jpg");
+    background-image: url("pictures/variants.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -73,13 +71,11 @@ a{
     height: 43%;
     top: 11%;
     left: 40%;
-    
-    margin: 10px;
 }
 .deserts-box{
     display: block;
     position:absolute;
-    background-image: url("deserts.jpg");
+    background-image: url("pictures/deserts.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -87,13 +83,11 @@ a{
     height: 43%;
     top: 55%;
     left: 40%;
-    
-    margin: 10px;
 }
 .cafe-box{
     display: block;
     position:absolute;
-    background-image: url("cafe.jpg");
+    background-image: url("pictures/cafe.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -113,9 +107,9 @@ a{
 
 @keyframes pictureAnimations{
     from{margin-top:50%;}
-    to{margin-top:0%;}
+    to{margin-top:1%;}
 }
 @keyframes menuAnimations{
     from{margin-top:-10%;}
-    to{margin-top:0%;}
+    to{margin-top:1%;}
 }
