@@ -17,19 +17,16 @@
             <a href="Deserts.html">Deserts</a>
         </nav>
     </header>
-    <div class="main-titles">CAFÉ</div>
-    <div class="cafeMain-box"></div>
+    <div class="main-titles" id="introAnimation">CAFÉ</div>
+    <div class="cafeMain-box" id="introAnimation"></div>
     <script>
-        let check = true
         function hello(){
-            if(check === true){
+            if(document.getElementById('demo').innerHTML === 'Home'){
                 document.getElementById("demo").innerHTML = "Hello"
             }
             else{
                 document.getElementById("demo").innerHTML = "Home"
             }
-            check = !check
-            
         }
     </script>
 </body>

@@ -156,6 +156,9 @@ a{
 #menuAnimations{
     animation: 0.8s linear running menuAnimations;
 }
+#introAnimation{
+    animation: 0.8s linear running introAnimation;
+}
 
 @keyframes pictureAnimations{
     from{margin-top:50%;}
@@ -164,4 +167,9 @@ a{
 @keyframes menuAnimations{
     from{margin-top:-10%;}
     to{margin-top:1%;}
+}
+@keyframes introAnimation{
+    from{margin-left: -45%;}
+    to{margin-left: 0;}
+    0%{opacity: -1; transform: scale(5);}
 }
