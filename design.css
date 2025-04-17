@@ -163,7 +163,7 @@ a{
     top: 47.5%;
     left: 20%;
     opacity:0;
-    animation: 3s linear running arrow1Animation;
+    animation: 2s linear running arrow1Animation;
 }
 .arrow2{
     position: absolute;
@@ -177,7 +177,7 @@ a{
     right: 13.5%;
     transform: rotate(180deg);
     opacity:0;
-    animation: 3s linear running arrow2Animation; 
+    animation: 2s linear running arrow2Animation; 
 }
 
 #menuAnimations{
@@ -185,6 +185,9 @@ a{
 }
 #introAnimation{
     animation: 0.8s linear running introAnimation;
+}
+#introAnimation:hover{
+    transform: scale(1.05);
 }
 #titleAnimation{
     animation: 2s linear running titleAnimation;
