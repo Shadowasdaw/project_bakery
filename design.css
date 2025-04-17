@@ -117,40 +117,65 @@ a{
     position: absolute;
     background-image: url(pictures/zopf.jpg);
     background-size: cover;
-    height: 200px;
-    width: 300px;
-    top: 45%;
-    left: 45%;
+    height: 400px;
+    width: 600px;
+    top: 35%;
+    left: 37.5%;
 }
 .cafeMain-box{
     position: absolute;
     background-image: url(pictures/cafeMainBild.jpg);
     background-size: cover;
-    height: 200px;
-    width: 300px;
-    top: 45%;
-    left: 45%;
+    height: 400px;
+    width: 600px;
+    top: 35%;
+    left: 37.5%;
 }
 .desertMain-box{
     position: absolute;
     background-image: url(pictures/deserts.jpg);
     background-size: cover;
-    height: 200px;
-    width: 300px;
-    top: 45%;
-    left: 45%;
+    height: 400px;
+    width: 600px;
+    top: 35%;
+    left: 37.5%;
 }
 .main-titles{
     position: absolute;
-    top: 37%;
+    top: 27.5%;
     left: 48.5%;
     font-size: 70px;
 }
 .long-main-titles{
     position: absolute;
-    top: 37%;
+    top: 27.5%;
     left: 45%;
     font-size: 70px;
+}
+.arrow1{
+    position: absolute;
+    opacity: 1;
+    background-image: url(pictures/arrow.png);
+    width: 300px;
+    height: 110px;
+    background-size: cover;
+    background-position: center;
+    top: 47.5%;
+    left: 20%;
+    animation: 0.5s linear running arrow1Animation;
+}
+.arrow2{
+    position: absolute;
+    opacity: 1;
+    background-image: url(pictures/arrow.png);
+    width: 300px;
+    height: 110px;
+    background-size: cover;
+    background-position: center;
+    top: 47.5%;
+    right: 13.5%;
+    transform: rotate(180deg);
+    animation: 0.5s linear running arrow2Animation;  
 }
 
 #menuAnimations{
@@ -158,6 +183,9 @@ a{
 }
 #introAnimation{
     animation: 0.8s linear running introAnimation;
+}
+#titleAnimation{
+    animation: 2s linear running titleAnimation;
 }
 
 @keyframes pictureAnimations{
@@ -169,7 +197,16 @@ a{
     to{margin-top:1%;}
 }
 @keyframes introAnimation{
-    from{margin-left: -45%;}
-    to{margin-left: 0;}
-    0%{opacity: -1; transform: scale(5);}
+    0%{opacity: 0; transform: scale(0.2);}
+}
+@keyframes titleAnimation{
+    0%{color: green}
+    20%{color: red}
+    40%{color: blue}
+}
+@keyframes arrow1Animation{
+    100%{transform: rotate(360deg);}
+}
+@keyframes arrow2Animation{
+    100%{transform: rotate(-180deg);}
 }
