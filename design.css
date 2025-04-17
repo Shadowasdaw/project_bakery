@@ -162,7 +162,8 @@ a{
     background-position: center;
     top: 47.5%;
     left: 20%;
-    animation: 0.5s linear running arrow1Animation;
+    opacity:0;
+    animation: 3s linear running arrow1Animation;
 }
 .arrow2{
     position: absolute;
@@ -175,7 +176,8 @@ a{
     top: 47.5%;
     right: 13.5%;
     transform: rotate(180deg);
-    animation: 0.5s linear running arrow2Animation;  
+    opacity:0;
+    animation: 3s linear running arrow2Animation; 
 }
 
 #menuAnimations{
@@ -205,8 +207,14 @@ a{
     40%{color: blue}
 }
 @keyframes arrow1Animation{
-    100%{transform: rotate(360deg);}
+    15%{transform: rotate(360deg); opacity:1}
+    30%{transform: rotate(720deg); opacity:1}
+    60%{transform: rotate(720deg); opacity:1}
+    100%{transform: rotate(720deg); opacity:0}
 }
 @keyframes arrow2Animation{
-    100%{transform: rotate(-180deg);}
+    15%{transform: rotate(-180deg); opacity:1}
+    30%{transform: rotate(-540deg); opacity:1}
+    60%{transform: rotate(-540deg); opacity:1}
+    100%{transform: rotate(-540deg); opacity:0}
 }
