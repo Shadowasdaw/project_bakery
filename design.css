@@ -4,6 +4,7 @@
 body {
     background-color: lightgray;
 }
+.dropdown
 a{
     text-decoration: none;
 }
@@ -52,6 +53,8 @@ a{
 .menu a:active {
     color: brown;
 }
+
+
 .product-box{
     display: block;
     position:absolute;
@@ -187,7 +190,8 @@ a{
     animation: 0.8s linear running introAnimation;
 }
 #introAnimation:hover{
-    transform: scale(1.05);
+    transform: scale(1.01);
+    opacity: 0.75;
 }
 #titleAnimation{
     animation: 2s linear running titleAnimation;
